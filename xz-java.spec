@@ -1,7 +1,7 @@
-%_javapackages_macros
+%{?_javapackages_macros:%_javapackages_macros}
 Name:           xz-java
 Version:        1.4
-Release:        1.0%{?dist}
+Release:        1.1%{?dist}
 Summary:        Java implementation of XZ data compression
 
 BuildArch:      noarch
