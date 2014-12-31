@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   xz-java-1.4.zip: 2f505c551b0e46dafe9016c127a726be89ffdb4d
+sources:
+  xz-java-1.5.zip: d4007d7fadaf683c2b01cb0054918252d111a3e2

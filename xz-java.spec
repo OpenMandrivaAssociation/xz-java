@@ -1,9 +1,9 @@
 %{?_javapackages_macros:%_javapackages_macros}
 Name:           xz-java
-Version:        1.4
-Release:        1.1%{?dist}
+Version:        1.5
+Release:        3.1
 Summary:        Java implementation of XZ data compression
-
+Group:          Development/Java
 BuildArch:      noarch
 
 License:        Public Domain
@@ -26,8 +26,6 @@ for advanced users, including LZMA2 with preset dictionary.
 
 %package javadoc
 Summary:        Javadocs for %{name}
-
-Requires:       jpackage-utils
 
 %description javadoc
 This package contains the API documentation for %{name}.
@@ -53,14 +51,11 @@ cp -R build/doc %{buildroot}%{_javadocdir}/%{name}
 # pom
 install -dm 755 %{buildroot}%{_mavenpomdir}
 install -pm 644 build/maven/xz-%{version}.pom %{buildroot}/%{_mavenpomdir}/JPP-%{name}.pom
-%add_maven_depmap JPP-%{name}.pom %{name}.jar
+%add_maven_depmap
 
-%files
+%files -f .mfiles
 %doc COPYING README THANKS
-%{_javadir}/%{name}.jar
 %{_javadir}/xz.jar
-%{_mavendepmapfragdir}/%{name}
-%{_mavenpomdir}/JPP-%{name}.pom
 
 %files javadoc
 %doc COPYING
