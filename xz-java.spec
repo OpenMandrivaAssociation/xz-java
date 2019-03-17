@@ -1,6 +1,6 @@
 %{?_javapackages_macros:%_javapackages_macros}
 Name:           xz-java
-Version:        1.5
+Version:        1.8
 Release:        3.3
 Summary:        Java implementation of XZ data compression
 Group:          Development/Java
