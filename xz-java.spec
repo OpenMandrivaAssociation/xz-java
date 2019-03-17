@@ -55,6 +55,7 @@ install -dm 755 %{buildroot}%{_mavenpomdir}
 %files
 %doc COPYING README THANKS
 %{_javadir}/xz.jar
+%{_datadir}/java/xz-java.jar
 
 %files javadoc
 %doc COPYING
