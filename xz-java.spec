@@ -52,7 +52,7 @@ cp -R build/doc %{buildroot}%{_javadocdir}/%{name}
 install -dm 755 %{buildroot}%{_mavenpomdir}
 #install -pm 644 build/maven/xz-%{version}.pom %{buildroot}/%{_mavenpomdir}/JPP-%{name}.pom
 
-%files -f .mfiles
+%files
 %doc COPYING README THANKS
 %{_javadir}/xz.jar
 
