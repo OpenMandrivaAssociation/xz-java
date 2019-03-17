@@ -51,7 +51,6 @@ cp -R build/doc %{buildroot}%{_javadocdir}/%{name}
 # pom
 install -dm 755 %{buildroot}%{_mavenpomdir}
 #install -pm 644 build/maven/xz-%{version}.pom %{buildroot}/%{_mavenpomdir}/JPP-%{name}.pom
-%add_maven_depmap
 
 %files -f .mfiles
 %doc COPYING README THANKS
