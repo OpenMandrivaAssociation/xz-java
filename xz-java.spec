@@ -7,7 +7,7 @@ Group:          Development/Java
 BuildArch:      noarch
 
 License:        Public Domain
-URL:            http://tukaani.org/xz/java.html
+URL:            https://tukaani.org/xz/java.html
 Source0:        http://tukaani.org/xz/xz-java-%{version}.zip
 
 BuildRequires:  jpackage-utils
